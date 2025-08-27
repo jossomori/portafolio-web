@@ -1,51 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Portafolio web de Josué Sosa, estudiante de Ingeniería en Computación">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <title>Mi portafolio web</title>
+    <title>Josué Sosa - Portafolio Web</title>
 </head>
 <body>
-    <header id="titulo">
-        <h1>¡Mi nombre es Josué Sosa y les doy la bienvenida a mi portafolio web!</h1>
-    </header>
-    <main>
+    <header class="header" role="banner">
         <div class="container">
-            
-            <div class="columns">
-                <div class="left">
-                    <section>
-                        <h2>Sobre mí</h2>
-                        <p>Tengo 20 años y soy estudiante de Ingeniería en Computación en la UdelaR. También me encuentro cursando la Fase 2 de Jóvenes a Programar. Me encanta la música, jugar videojuegos, tocar la guitarra y aprender cosas nuevas sobre tecnología y programación.</p>
-                    </section>
-
-                    <section>
-                        <h2>Mi experiencia</h2>
-                        <p>Empecé a estudiar por mi cuenta un poco de HTML y CSS en 2022. Solo hice un par de páginas sencillas y después abandoné ese mundo… hasta ahora, con el inicio de la Fase 2 de JaP. En estas primeras semanas repasé lo básico y, día a día, voy incorporando nuevos aprendizajes trabajando en distintos proyectos (como este) que me ayudan a convertirme en un mejor desarrollador.</p>
-                    </section>
-                </div>
-                <div class="right">
-                    <section>
-                        <h2>Una imagen que me representa</h2>
-                        <img id="pfp" src="img/pfp.png" alt="Una imagen que me representa">
-                    </section>
-                </div>
-            </div>
+            <h1 class="header-title">¡Mi nombre es Josué Sosa y les doy la bienvenida a mi portafolio web!</h1>
         </div>
+    </header>
+    
+    <main class="main-content" role="main">
+        <section class="content-section" aria-labelledby="sobre-mi-heading">
+            <h2 id="sobre-mi-heading" class="content-section-title">Sobre mí</h2>
+            <div class="content-section-text">
+                <p>Tengo 20 años y soy estudiante de Ingeniería en Computación en la UdelaR. También me encuentro cursando la Fase 2 de Jóvenes a Programar. Me encanta la música, jugar videojuegos, tocar la guitarra y aprender cosas nuevas sobre tecnología y programación.</p>
+            </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="experiencia-heading">
+            <h2 id="experiencia-heading" class="content-section-title">Mi experiencia</h2>
+            <div class="content-section-text">
+                <p>Empecé a estudiar por mi cuenta un poco de HTML y CSS en 2022. Solo hice un par de páginas sencillas y después abandoné ese mundo… hasta ahora, con el inicio de la Fase 2 de JaP. En estas primeras semanas repasé lo básico y, día a día, voy incorporando nuevos aprendizajes trabajando en distintos proyectos (como este) que me ayudan a convertirme en un mejor desarrollador.</p>
+            </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="imagen-heading">
+            <h2 id="imagen-heading" class="content-section-title">Una imagen que me representa</h2>
+            <figure class="profile-figure">
+                <img class="profile-image" src="img/pfp.png" alt="Josué Sosa - Desarrollador web en formación">
+            </figure>
+        </section>
     </main>
-    <footer>
-        <h2>¡Gracias por visitar esta página!</h2>
+    
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <h2 class="footer-title">¡Gracias por visitar esta página!</h2>
 
-        <div class="logos_container">
-            <a href="mailto:05josuesosa@gmail.com" title="Envíame un email" target="_blank"><img class="logos" src="img/gmail.png" alt="Gmail Logo"></a>
+            <div class="social-links">
+                <a class="social-link" href="mailto:05josuesosa@gmail.com" title="Envíame un email" target="_blank" rel="noopener noreferrer">
+                    <img class="social-icon" src="img/gmail.png" alt="Enviar email a Josué Sosa">
+                </a>
 
-            <a href="https://www.linkedin.com/in/josu%C3%A9-sosa/" title="Mi perfil de LinkedIn" target="_blank"><img class="logos" src="img/linkedin.png" alt="LinkedIn Logo"></a>
+                <a class="social-link" href="https://www.linkedin.com/in/josu%C3%A9-sosa/" title="Mi perfil de LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <img class="social-icon" src="img/linkedin.png" alt="Perfil de LinkedIn de Josué Sosa">
+                </a>
 
-            <a href="https://github.com/jossomori" title="Mi perfil de GitHub" target="_blank"><img class="logos" src="img/github.png" alt="GitHub Logo"></a>
+                <a class="social-link" href="https://github.com/jossomori" title="Mi perfil de GitHub" target="_blank" rel="noopener noreferrer">
+                    <img class="social-icon" src="img/github.png" alt="Perfil de GitHub de Josué Sosa">
+                </a>
+            </div>
         </div>
     </footer>
 </body>
